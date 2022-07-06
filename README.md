@@ -1,4 +1,4 @@
-# Java TestNG Selenium 
+# How to use relative locators for automation test in Java-TestNG on LambdaTest
 
 ### Environment Setup
 
