@@ -34,7 +34,18 @@ Set LambdaTest Username and Access Key in environment variables.
    $ set LT_USERNAME="YOUR_USERNAME"
    $ set LT_ACCESS_KEY="YOUR ACCESS KEY"
    ```
-    
+### Using relative locators
+The following are examples of using relative locators:
+```java
+// find the height input using toRightOf relative locator
+// input is right of height label
+WebElement heightInput = driver.findElement(with(By.tagName("input"))
+   .toRightOf(heightLabel));
+
+// find the calculate button which is below the weight label
+WebElement calculateButton = driver.findElement(with(By.tagName("input"))
+   .below(weightLabel));
+```
 ### Running Tests
 
 ```
